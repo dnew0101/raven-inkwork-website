@@ -1,11 +1,16 @@
 /**
  * Server component; inner node, not a leaflet/client component
  */
-import Navbar from "./components/client/Navbar";
+
+/**
+ * Home page.
+ */
 export default function Home() {
   return (
-    <nav>
-      <Navbar />
-    </nav>
+    <div className="container">
+      <main>
+        <p>Howdy</p>
+      </main>
+    </div>
   );
 }
