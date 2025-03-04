@@ -19,14 +19,12 @@ type NavButtonProps = {
  */
 function NavButton({ getClicked, setClicked }: NavButtonProps) {
   const [getHovered, setHovered] = useState(false)
-  const [isToggled, setToggled] = useState(false)
+  
   {/*
     handleClick writes parent component's state; able to be read by other child components.
     handleMouseOver and handleMouseOut are for hover effects on *exclusively* this component's state.
   */}
-
   const handleClick = () => {
-    setToggled(!isToggled)
     setClicked(!getClicked)
     console.log("Clicked")
   }
@@ -56,7 +54,7 @@ function NavButton({ getClicked, setClicked }: NavButtonProps) {
         <div 
           className=
             {`left-box w-[6px] h-[6px] border border-white transition-transform duration-333 
-              ${isToggled && getHovered ? 'translate-y-1.5' : isToggled ? 'translate-y-1' : getHovered ? 'translate-y-0.5' : 'translate-y-0'}
+              ${getClicked && getHovered ? 'translate-y-1.5' : getClicked ? 'translate-y-1' : getHovered ? 'translate-y-0.5' : 'translate-y-0'}
           `}
         ></div>
 
@@ -64,7 +62,7 @@ function NavButton({ getClicked, setClicked }: NavButtonProps) {
 
         <div className=
             {`right-box w-[6px] h-[6px] border border-white transition-transform duration-333 
-              ${isToggled && getHovered ? '-translate-y-1.5' : isToggled ? '-translate-y-1' : getHovered ? '-translate-y-0.5' : 'translate-y-0'}
+              ${getClicked && getHovered ? '-translate-y-1.5' : getClicked ? '-translate-y-1' : getHovered ? '-translate-y-0.5' : 'translate-y-0'}
           `}></div>
 
       </div>
