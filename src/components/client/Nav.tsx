@@ -35,7 +35,7 @@ const Nav = () => {
     return (
         <>
             <nav className='w-2/5 xl:w-1/3 flex justify-end mr-4'>
-                <ul className='nav-links w-full hidden lg:flex justify-between mr-2'>
+                <ul className='nav-links w-full hidden lg:flex flex-row justify-end'>
                     <NavLinks 
                     getClicked = {isOpen}
                     setClicked={toggleNav}
@@ -54,7 +54,7 @@ const Nav = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div 
-                    className='fixed left-0 top-0 w-full h-screen origin-top  bg-black bg-opacity-90 lg:hidden'
+                    className='fixed left-0 top-0 w-full h-screen origin-top bg-black bg-opacity-90 lg:hidden'
                     variants={menuVariants}
                     initial='initial'
                     animate='animate'

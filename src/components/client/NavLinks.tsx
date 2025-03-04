@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import motion from 'framer-motion';
 
 type NavLinksProps = {
     getClicked: boolean,
@@ -33,21 +32,24 @@ const NavLinks = ({ getClicked, setClicked }: NavLinksProps) => {
      * Maps over each link item in the array and returns Next Link component with custom styles/spacing.
      */
     return (
-        <div className="mt-10">
+        <div className="flex flex-col mt-16 lg:mt-0 lg:flex-row lg:gap-3 xl:gap-4 lg:items-center">
             {links.map((link) => (
                 <div 
                     key={link.href}
-                    className="flex flex-col justify-center items-center h-8 py-8">
-                        <Link 
-                        title={link.label} 
-                        href={link.href} 
-                        className={`${
-                            pathname === link.href ? "border-b border-neutral-100" : ""}
-                            hover:opacity-80 transition-opacity duration-300
-                            text-3xl`}
-                            onClick={handleClick}>
-                        {link.label}
-                        </Link>
+                    className="flex flex-col justify-center items-center h-8 py-8
+                    lg:flex-row lg:py-0 lg:px-0 lg:gap-4 lg:h-auto">
+                        <div>
+                            <Link 
+                            title={link.label} 
+                            href={link.href} 
+                            className={`${
+                                pathname === link.href ? "border-b-2 border-neutral-400" : ""}
+                                hover:opacity-80 transition-opacity duration-300
+                                text-3xl lg:text-base`}
+                                onClick={handleClick}>
+                            {link.label}
+                            </Link>
+                        </div>
                 </div>
             ))}
         </div>
