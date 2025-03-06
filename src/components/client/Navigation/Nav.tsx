@@ -1,8 +1,14 @@
 "use client";
-import { AnimatePresence, motion } from 'framer-motion';
-import NavButton from './NavButton';
-import NavLinks from './NavLinks';
+import dynamic from 'next/dynamic';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
+
+/**
+ * Dynamic imports from heavier modules
+ */
+const AnimatePresence = dynamic(() => import('framer-motion').then(mod => mod.AnimatePresence));
+const NavButton = dynamic(() => import('./NavButton'));
+const NavLinks = dynamic(() => import('./NavLinks'));
 
 const Nav = () => {
     const [isOpen, setOpen] = useState(false);
@@ -34,14 +40,8 @@ const Nav = () => {
 
     return (
         <>
-            <nav className='w-2/5 xl:w-1/3 flex justify-end mr-4'>
-                <ul className='nav-links w-full hidden lg:flex flex-row justify-end'>
-                    <NavLinks 
-                    getClicked = {isOpen}
-                    setClicked={toggleNav}
-                    />
-                </ul>
-                <div className='lg:hidden z-20'>
+            <nav className='w-1/2 lg:w-1/3 flex justify-end mr-4'>
+                <div className='z-20'>
                     <NavButton getClicked={isOpen}
                     setClicked={toggleNav} />
                 </div>
@@ -54,7 +54,7 @@ const Nav = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div 
-                    className='fixed left-0 top-0 w-full h-screen origin-top bg-black bg-opacity-90 lg:hidden'
+                    className='fixed left-0 top-0 w-full h-screen origin-top bg-black bg-opacity-90'
                     variants={menuVariants}
                     initial='initial'
                     animate='animate'

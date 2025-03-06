@@ -43,30 +43,31 @@ function NavButton({ getClicked, setClicked }: NavButtonProps) {
     /**
      * onMouseOver, onMouseOut, onClick events will be set here.
      */
-    <button 
-      onClick={handleClick} 
-      onMouseOver={handleMouseOver} 
-      onMouseOut={handleMouseOut}
-      className='bg-opacity-0 w-[60px] h-[60px] z-40'
-    >
-      <div className='nav-button-boxes flex justify-between gap-1 m-2'>
+      <button
+        onClick={handleClick}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+        className='bg-opacity-0 w-[60px] h-[60px] z-40'
+        aria-label='Navigation menu button'
+      >
+        <div className='nav-button-boxes flex justify-between gap-1 m-2'>
 
-        <div 
-          className=
-            {`left-box w-[7px] h-[7px] border border-white transition-transform duration-333 
-              ${getClicked && getHovered ? 'translate-y-1.5' : getClicked ? 'translate-y-1' : getHovered ? 'translate-y-0.5' : 'translate-y-0'}
-          `}
-        ></div>
+          <div 
+            className=
+              {`left-box w-[7px] h-[7px] border border-white transition-transform duration-333 
+                ${getClicked && getHovered ? 'translate-y-1.5' : getClicked ? 'translate-y-1' : getHovered ? 'translate-y-0.5' : 'translate-y-0'}
+            `}
+          ></div>
 
-        <div className='center-box w-[7px] h-[7px] border border-white'></div>
+          <div className='center-box w-[7px] h-[7px] border border-white'></div>
 
-        <div className=
-            {`right-box w-[7px] h-[7px] border border-white transition-transform duration-333 
-              ${getClicked && getHovered ? '-translate-y-1.5' : getClicked ? '-translate-y-1' : getHovered ? '-translate-y-0.5' : 'translate-y-0'}
-          `}></div>
+          <div className=
+              {`right-box w-[7px] h-[7px] border border-white transition-transform duration-333 
+                ${getClicked && getHovered ? '-translate-y-1.5' : getClicked ? '-translate-y-1' : getHovered ? '-translate-y-0.5' : 'translate-y-0'}
+            `}></div>
 
-      </div>
-    </button>
+        </div>
+      </button>
   )
 }
 
