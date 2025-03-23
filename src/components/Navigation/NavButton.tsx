@@ -39,6 +39,13 @@ function NavButton({ getClicked, setClicked }: NavButtonProps) {
     console.log("Mouse out")
   }
 
+  const getTranslateClass = (clicked: boolean, hovered: boolean, isLeft: boolean) => {
+    if (clicked && hovered) return isLeft ? 'translate-y-1.5 md:translate-y-1.5' : '-translate-y-1.5 md:-translate-y-1.5';
+    if (clicked) return isLeft ? 'translate-y-1.5 md:translate-y-1' : '-translate-y-1.5 md:-translate-y-1';
+    if (hovered) return isLeft ? 'md:translate-y-0.5' : 'md:-translate-y-0.5';
+    return 'translate-y-0 md:translate-y-0';
+  }
+
   return (
     /**
      * onMouseOver, onMouseOut, onClick events will be set here.
@@ -51,21 +58,15 @@ function NavButton({ getClicked, setClicked }: NavButtonProps) {
         aria-label='Navigation menu button'
       >
         <div className='nav-button-boxes flex justify-between gap-1 m-2'>
-
           <div 
-            className=
-              {`left-box w-[7px] h-[7px] border border-white transition-transform duration-333 
-                ${getClicked && getHovered ? 'translate-y-1.5' : getClicked ? 'translate-y-1' : getHovered ? 'translate-y-0.5' : 'translate-y-0'}
-            `}
-          ></div>
+            className={`left-box w-[7px] h-[7px] border border-white transition-transform duration-333 ${getTranslateClass(getClicked, getHovered, true)}`}>
+          </div>
 
           <div className='center-box w-[7px] h-[7px] border border-white'></div>
-
-          <div className=
-              {`right-box w-[7px] h-[7px] border border-white transition-transform duration-333 
-                ${getClicked && getHovered ? '-translate-y-1.5' : getClicked ? '-translate-y-1' : getHovered ? '-translate-y-0.5' : 'translate-y-0'}
-            `}></div>
-
+          
+          <div 
+            className={`right-box w-[7px] h-[7px] border border-white transition-transform duration-333 ${getTranslateClass(getClicked, getHovered, false)}`}>
+          </div>
         </div>
       </button>
   )

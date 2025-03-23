@@ -15,7 +15,7 @@ const links = [
     { href: "/tattoos", label: "Tattoos" },
     { href: "/digital-art", label: "Digital Art" },
     { href: "/photography", label: "Photography" },
-    { href: "/blogs", label: "Blogs" },
+    { href: "/blogs", label: "Posts" },
     { href: "/contact", label: "Contact" },
 ]
 

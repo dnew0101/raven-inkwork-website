@@ -9,7 +9,6 @@ import { faBluesky } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { color } from 'framer-motion';
 
 function SocialMediaLinks() {
     const links = [
