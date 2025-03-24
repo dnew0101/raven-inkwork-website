@@ -7,7 +7,6 @@ import {
     useMotionValue,
   } from 'framer-motion';
   import { useInView } from 'react-intersection-observer';
-  import Button from '@/components/Globals/Button';
 
 const BioSection = () => {
 
@@ -30,28 +29,72 @@ const BioSection = () => {
   };
 
   return (
-    <div className="Bio-Section relative flex flex-col justify-center items-center h-[100vh] w-full">
-      <div className='-z-10'>
+    <div className="Bio-Section relative flex flex-col justify-center items-center h-auto w-full">
+      <div className='flex flex-col gap-8 -z-10 w-full sm:w-[80%] items-center'>
         <motion.div 
-        className="flex flex-col-reverse sm:flex-row gap-2 justify-center items-center w-full h-full"
-        style={{ y: y1 }}>
-            <div className='Image-Container flex justify-center w-[90%] sm:w-[49%]'>
-                <Image 
-                    src='/MushroomR.png'
-                    alt='Mushroom'
-                    width={300}
-                    height={200}
-                />
-            </div>
-            <div className='Text-Container flex justify-center w-[90%] sm:w-[49%]'>
-                <p className='flex flex-col text-lg text-center justify-center'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Numquam nobis incidunt ipsam fugit, repudiandae cumque 
-                    pariatur ipsa. Tempore assumenda non animi magni, obcaecati 
-                    ab repellat rerum debitis, molestiae, blanditiis sapiente.
-                </p>
-            </div>
-        </motion.div>
+          className="flex flex-col gap-2
+          justify-center items-center w-[90%] h-full
+          border-2 border-white py-14 sm:p-10 md:p-14"
+          style={{ y: y2 }}>
+
+              <motion.h1 className='text-center mb-4 underline'>
+                Am I the right artist for you?
+              </motion.h1>
+
+              <div className='Content-Container flex flex-col sm:flex-row-reverse gap-2
+              justify-center items-center w-full h-full'>
+
+                <div className='Image-Container flex justify-center w-[90%] sm:w-[49%]'>
+                    <Image 
+                        src='/Home-Page-Assets/Raven-Painting.png'
+                        alt='Raven cartoon caricature holding a paint brush'
+                        width={300}
+                        height={200}
+                        
+                    />
+                </div>
+                <div className='Text-Container flex justify-center w-[90%]
+                sm:w-[49%] p-4 border-2 border-white'>
+                    <p className='flex flex-col text-lg text-center justify-center'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Numquam nobis incidunt ipsam fugit, repudiandae cumque 
+                        pariatur ipsa. Tempore assumenda non animi magni, obcaecati 
+                        ab repellat rerum debitis, molestiae, blanditiis sapiente.
+                    </p>
+                </div>
+              </div>
+
+          </motion.div>
+
+          <motion.div 
+            className="flex flex-col gap-2
+            justify-center items-center w-[90%] h-full
+            border-2 border-white py-14 sm:p-10 md:p-14"
+            style={{ y: y2 }}>
+
+              <h1 className='text-center mb-4 underline'>Get to know me!</h1>
+
+              <div className='Content-Container flex flex-col-reverse sm:flex-row gap-2
+              justify-center items-center w-full h-full'>
+
+                  <div className='Image-Container flex justify-center w-[90%] sm:w-[49%]'>
+                      <Image 
+                          src='/Home-Page-Assets/Raven!.png'
+                          alt='Raven cartoon caricature exclaiming'
+                          width={300}
+                          height={200}
+                      />
+                  </div>
+                  <div className='Text-Container flex justify-center w-[90%] sm:w-[49%] p-4 border-2 border-white'>
+                      <p className='flex flex-col text-lg text-center justify-center'>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Numquam nobis incidunt ipsam fugit, repudiandae cumque 
+                          pariatur ipsa. Tempore assumenda non animi magni, obcaecati 
+                          ab repellat rerum debitis, molestiae, blanditiis sapiente.
+                      </p>
+                  </div>
+              </div>
+          </motion.div>
       </div>
     </div>
   )

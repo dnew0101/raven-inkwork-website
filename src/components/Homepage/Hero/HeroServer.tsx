@@ -9,12 +9,14 @@ import {
 } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Button from '@/components/Globals/Button';
+import { FaChevronDown } from 'react-icons/fa';
 
 function HeroServer() {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, 50]);
   const y2 = useTransform(scrollY, [0, 300], [0, 100]);
   const y3 = useTransform(scrollY, [0, 300], [0, 150]);
+  const chevronOpacity = useTransform(scrollY, [0, 100], [1, 0]);
   
   const [ref, inView, entry] = useInView({
     triggerOnce: false,
@@ -66,19 +68,15 @@ function HeroServer() {
                 lg:w-80 lg:h-80'>
               </Image> */}
 
-              <motion.div className='w-full flex justify-center'>
+              <motion.div className='w-[90%] md:w-[70%] lg:w-[50%] flex justify-center flex-col items-center gap-2 border-2 border-white p-4'>
+                <p className='relative'>
+                  Looking to book a tattoo?
+                </p>
                 <Button 
-                  innerText='Get In Touch' 
+                  innerText='Booking Form' 
                   route={'/contact'}
                   />
               </motion.div>
-
-              <div className='w-full flex justify-center'>
-                <Button
-                  innerText='View Portfolio'
-                  route={'/portfolio'}
-                  />
-              </div>
 
               {/* <Image
                 src="/MushroomR.png"
@@ -91,6 +89,14 @@ function HeroServer() {
                 lg:w-80 lg:h-80'>
               </Image> */}
         </motion.div>
+
+        <motion.div className='flex flex-col text-center items-center mt-4'
+          style={{ opacity: chevronOpacity }}>
+          <FaChevronDown 
+            className='text-white text-3xl animate-bounce mt-4' />
+          <p className='text-white text-sm mt-2'>Scroll down to see more!</p>
+        </motion.div>
+
     </div>
   )
 }
