@@ -7,6 +7,7 @@
  */
 
 "use server";
+import Art from "@/components/Homepage/Art/Art";
 import BioSection from "@/components/Homepage/Bio/BioSection";
 // import BioServerC from "@/components/server/Homepage/Bio/BioServerC";
 // import ProjectsSection from "@/components/server/Homepage/CurrentProjects/ProjectsSectionServC";
@@ -20,6 +21,7 @@ function Home() {
       <div className="w-full h-auto">
         <main className="flex flex-col justify-center min-h-screen w-full gap-y-4">
           <HeroServer />
+          <Art />
           <BioSection />
           {/* <ProjectsSection />
           <MerchSection />

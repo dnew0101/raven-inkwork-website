@@ -12,11 +12,12 @@ type NavLinksProps = {
  */
 const links = [
     { href: "/", label: "Home" },
+    { href: "/booking", label: "Booking" },
     { href: "/tattoos", label: "Tattoos" },
     { href: "/digital-art", label: "Digital Art" },
     { href: "/photography", label: "Photography" },
-    { href: "/blogs", label: "Posts" },
-    { href: "/contact", label: "Contact" },
+    // { href: "/blogs", label: "Posts" },
+    { href: "/contact", label: "Contact" }
 ]
 
 const NavLinks = ({ getClicked, setClicked }: NavLinksProps) => {
@@ -36,7 +37,7 @@ const NavLinks = ({ getClicked, setClicked }: NavLinksProps) => {
             {links.map((link) => (
                 <div 
                     key={link.href}
-                    className="flex flex-col justify-center items-center h-8 py-8">
+                    className="flex flex-col justify-center items-center h-8 mt-[4vh] py-4">
                         <div>
                             <Link 
                             title={link.label} 

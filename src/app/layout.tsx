@@ -31,7 +31,7 @@ export default function RootLayout({
           antialiased w-full h-full flex flex-col min-h-screen overflow-x-hidden`}
       >
         <Header />
-          <main className="flex flex-col items-center -z-10">
+          <main className="flex flex-col items-center z-0">
               {children}
           </main>
         <Footer />

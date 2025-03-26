@@ -34,8 +34,8 @@ function HeroServer() {
 
 
   return (
-    <div className="relative flex flex-col items-center h-[100vh] w-full mt-40">
-      <div className='-z-10 mb-24'>
+    <div className="relative flex flex-col items-center h-[100vh] w-full mt-[20vh]">
+      <div className='-z-10 mb-[10vh]'>
         <motion.h1 
         className="flex flex-row gap-2 flex-wrap justify-center sm:border"
         style={{ y: y1 }}>
@@ -54,7 +54,8 @@ function HeroServer() {
       </div>
         <motion.div 
           className='Hero-Nav relative z-10
-          flex flex-col md:flex-row gap-4 mt-4 w-full justify-center items-center md:justify-around
+          flex flex-col md:flex-row gap-4 mt-[2vh] w-full justify-center items-center md:justify-around
+          bg-black
           sm:w-4/5 lg:w-3/4'
           style={{ y: y1 }}>
               {/* <Image
@@ -68,7 +69,7 @@ function HeroServer() {
                 lg:w-80 lg:h-80'>
               </Image> */}
 
-              <motion.div className='w-[90%] md:w-[70%] lg:w-[50%] flex justify-center flex-col items-center gap-2 border-2 border-white p-4'>
+              <div className='w-[90%] md:w-[70%] lg:w-[50%] flex justify-center flex-col items-center gap-2 border-2 border-white p-4'>
                 <p className='relative'>
                   Looking to book a tattoo?
                 </p>
@@ -76,7 +77,7 @@ function HeroServer() {
                   innerText='Booking Form' 
                   route={'/contact'}
                   />
-              </motion.div>
+              </div>
 
               {/* <Image
                 src="/MushroomR.png"

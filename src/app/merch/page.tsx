@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div>Merchandise Page</div>
+    <div>Merchandise page is currently under construction.</div>
   )
 }
 

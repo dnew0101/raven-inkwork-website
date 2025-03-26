@@ -8,7 +8,13 @@ import {
   } from 'framer-motion';
   import { useInView } from 'react-intersection-observer';
 
-const BioSection = () => {
+type SectionsProps = {
+    title: string;
+    image: [];
+    text: string;
+}
+
+const Sections = () => {
 
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, 50]);
@@ -100,4 +106,4 @@ const BioSection = () => {
   )
 }
 
-export default BioSection
+export default Sections
