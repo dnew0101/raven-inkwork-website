@@ -31,7 +31,7 @@ function page() {
         <Section
           title="Something Else"
           images={photoBucket}
-          caption="Fiddle fart fiddle sticks."
+          caption="Blank..."
           isFlexRowReverse={false}
           />
       </main>

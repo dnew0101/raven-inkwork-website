@@ -17,21 +17,21 @@ function page() {
       <header className="flex flex-row w-full justify-center text-center mt-[5vh] mb-[6vh] text-7xl">Digital Art Portfolio</header>
       <main className="flex flex-col w-full justify-center items-center gap-y-10">
         <Section
-          title="Landscape"
+          title="Reddit"
           images={photoBucket}
-          caption="Landscapes are a popular subject for photographers, with their wide open spaces and beautiful scenery."
+          caption="Reddit art collection..."
           isFlexRowReverse={false}
           />
         <Section
-          title="Portrait"
+          title="2-D Pixel Art"
           images={photoBucket}
-          caption="Portrait photography is a great way to capture the personality of your subject."
+          caption="Pixel art for games..."
           isFlexRowReverse={true}
           />
         <Section
-          title="Critters"
+          title="Illustrative"
           images={photoBucket}
-          caption="Critters are a fun subject for photographers, with their playful antics and cute faces."
+          caption="Illustrative art..."
           isFlexRowReverse={false}
           />
       </main>
