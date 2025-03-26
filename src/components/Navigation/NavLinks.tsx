@@ -17,7 +17,7 @@ const links = [
     { href: "/digital-art", label: "Digital Art" },
     { href: "/photography", label: "Photography" },
     // { href: "/blogs", label: "Posts" },
-    { href: "/contact", label: "Contact" }
+    { href: "/contact", label: "Inquiries" }
 ]
 
 const NavLinks = ({ getClicked, setClicked }: NavLinksProps) => {
