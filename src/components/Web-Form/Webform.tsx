@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Modal, Box, Typography, Button } from '@mui/material';
 import emailjs from '@emailjs/browser';
 import Image from 'next/image';
+import Link from 'next/link';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 const publicSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY;
@@ -10,15 +11,10 @@ const publicSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY;
 const Webform = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [captchaToken, setCaptchaToken] = useState<string | null>(null);
-    const [isClicked, setIsClicked] = useState(false);
 
     const handleModalClose = () => {
         setIsModalOpen(false);
     };
-
-    const handleButtonClick = () => {
-        setIsClicked(true);
-    }
 
     const handleCaptchaChange = (token: string | null) => {
         setCaptchaToken(token);
@@ -99,7 +95,6 @@ const Webform = () => {
                 />
                 <button 
                     type='submit'
-                    onClick={handleButtonClick}
                     className= {`bg-black border-2 border-white w-[90%] sm:w-fit py-2 px-[15%] cursor-pointer
                     hover:px-[19%] hover:rounded-xl transition-all duration-300 ease-in-out`}>
                         <span 
@@ -147,7 +142,7 @@ const Webform = () => {
                     <Typography id="modal-description" sx={{ mt: 2 }} className='pt-6'>
                         Your message has been successfully sent! We will get back to you shortly.
                     </Typography>
-                    <a href="/">
+                    <Link href="/">
                         <Button
                             variant="contained"
                             color='info'
@@ -157,7 +152,7 @@ const Webform = () => {
                         >
                             Close
                         </Button>
-                    </a>
+                    </Link>
                 </Box>
             </Modal>
 
