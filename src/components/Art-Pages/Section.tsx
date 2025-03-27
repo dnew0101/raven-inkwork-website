@@ -1,12 +1,3 @@
-"use client";
-import Image from 'next/image';
-import {
-    useScroll,
-    motion,
-    useTransform,
-    useMotionValue,
-  } from 'framer-motion';
-  import { useInView } from 'react-intersection-observer';
 import EmblaCarousel from '../Globals/Carousel/EmblaCarousel';
 
 type SectionsProps = {
@@ -17,25 +8,6 @@ type SectionsProps = {
 }
 
 const Section = ({title, images, caption, isFlexRowReverse} : SectionsProps) => {
-
-  const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 300], [0, 50]);
-  const y2 = useTransform(scrollY, [0, 300], [0, 100]);
-  const y3 = useTransform(scrollY, [0, 300], [0, 150]);
-  
-  const [ref, inView, entry] = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
-
-  const variants = {
-    visible: { opacity: 1, scale: 1, y: 0 },
-    hidden: { 
-      opacity: 0, 
-      scale: 0.65, 
-      y: 50 },
-  };
-
   return (
     <section className="Recyclable-Section relative flex flex-col justify-center items-center h-auto w-full">
       <div className='flex flex-col gap-8 w-full items-center'>

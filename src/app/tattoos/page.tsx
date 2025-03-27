@@ -7,9 +7,9 @@ const photoBucket = [
   '/Home-Page-Assets/Raven-Question.png',
 ];
 
-const fineLinePhotoBucket = [];
-const neoTraditionalPhotoBucket = [];
-const otherPhotoBucket = [];
+// const fineLinePhotoBucket = [];
+// const neoTraditionalPhotoBucket = [];
+// const otherPhotoBucket = [];
 
 function page() {
   return (

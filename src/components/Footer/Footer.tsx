@@ -26,6 +26,7 @@ const Footer = () => {
                 icon: faEnvelope
             }
         ];
+    const date = new Date().getFullYear();
 
   return (
     <div className='relative flex flex-col justify-center align-middle w-full h-[30vh] mt-80'>
@@ -40,7 +41,12 @@ const Footer = () => {
                 <ul className='flex flex-row flex-wrap justify-center align-middle py-4 w-full sm:w-[80%] md:w-[60%] lg:w-[50%] mx-auto'>
                             {links.map((link, index) => (
                                 <li key={index} className='w-1/6 flex flex-row justify-center align-middle z-20'>
-                                    <a href={link.link} target='_blank' rel='noreferrer' className='flex flex-row justify-center align-middle'>
+                                    <a 
+                                    href={link.link} 
+                                    target='_blank' 
+                                    rel='noreferrer' 
+                                    className='flex flex-row justify-center align-middle'
+                                    aria-label={`Raye's ${link.name} page.`}>
                                         <FontAwesomeIcon 
                                         icon={link.icon}
                                         className='size-10'
@@ -50,7 +56,7 @@ const Footer = () => {
                                 </li>
                             ))}
                         </ul>
-                <p>&copy; 2025 Raven Inkwork</p>
+                <p>Copyright &copy; {date} Raven Inkwork</p>
         </footer>
     </div>
   )

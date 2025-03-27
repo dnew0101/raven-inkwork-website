@@ -1,35 +1,38 @@
 "use client";
+/**
+ * Commented out sections are to be used for future development.
+ * Simply requires the assets to be created first, prior to being implemented.
+ */
 
-import Image from 'next/image';
+// import Image from 'next/image';
 import {
   useScroll,
   motion,
-  useTransform,
-  useMotionValue,
+  useTransform
 } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
 import Button from '@/components/Globals/Button';
 import { FaChevronDown } from 'react-icons/fa';
 
 function HeroServer() {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, 50]);
-  const y2 = useTransform(scrollY, [0, 300], [0, 100]);
+  // const y2 = useTransform(scrollY, [0, 300], [0, 100]);
   const y3 = useTransform(scrollY, [0, 300], [0, 150]);
   const chevronOpacity = useTransform(scrollY, [0, 100], [1, 0]);
   
-  const [ref, inView, entry] = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
+  // const [ref, inView, entry] = useInView({
+  //   triggerOnce: false,
+  //   threshold: 0.5,
+  // });
 
-  const variants = {
-    visible: { opacity: 1, scale: 1, y: 0 },
-    hidden: { 
-      opacity: 0, 
-      scale: 0.65, 
-      y: 50 },
-  };
+  // const variants = {
+  //   visible: { opacity: 1, scale: 1, y: 0 },
+  //   hidden: { 
+  //     opacity: 0, 
+  //     scale: 0.65, 
+  //     y: 50 },
+  // };
 
 
 
@@ -75,7 +78,7 @@ function HeroServer() {
                 </p>
                 <Button 
                   innerText='Booking Form' 
-                  route={'/contact'}
+                  route={'https://form.jotform.com/240391381273050'}
                   />
               </div>
 

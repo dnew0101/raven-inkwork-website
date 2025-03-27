@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Navigation/Header";
 import Footer from "../components/Footer/Footer";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          src="https://www.google.com/recaptcha/api.js"
+          async
+          defer
+        ></script>
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} 
           antialiased w-full h-full flex flex-col min-h-screen overflow-x-hidden`}

@@ -1,3 +1,5 @@
+"use client";
+import Image from 'next/image'
 import React, { useCallback, useEffect, useRef } from 'react'
 import {
   EmblaCarouselType,
@@ -82,19 +84,28 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   )
 
   useEffect(() => {
-    if (!emblaApi) return
+    if (!emblaApi) return;
 
-    setTweenNodes(emblaApi)
-    setTweenFactor(emblaApi)
-    tweenParallax(emblaApi)
+    setTweenNodes(emblaApi);
+    setTweenFactor(emblaApi);
+    tweenParallax(emblaApi);
 
     emblaApi
       .on('reInit', setTweenNodes)
       .on('reInit', setTweenFactor)
       .on('reInit', tweenParallax)
       .on('scroll', tweenParallax)
-      .on('slideFocus', tweenParallax)
-  }, [emblaApi, tweenParallax])
+      .on('slideFocus', tweenParallax);
+
+    return () => {
+      emblaApi
+        .off('reInit', setTweenNodes)
+        .off('reInit', setTweenFactor)
+        .off('reInit', tweenParallax)
+        .off('scroll', tweenParallax)
+        .off('slideFocus', tweenParallax);
+    };
+  }, [emblaApi, setTweenNodes, setTweenFactor, tweenParallax]);
 
   return (
     <div className="embla">
@@ -104,10 +115,12 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <div className="embla__slide" key={index}>
               <div className="embla__parallax">
                 <div className="embla__parallax__layer">
-                  <img
+                  <Image
                     className="embla__slide__img embla__parallax__img"
                     src={index}
-                    alt="Your alt text"
+                    alt={`Photo ${index} in carousel collection`}
+                    width={500}
+                    height={500}
                   />
                 </div>
               </div>
