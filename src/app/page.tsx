@@ -7,11 +7,11 @@
  */
 
 "use server";
-import Art from "@/components/Homepage/Art/Art";
-import BioSection from "@/components/Homepage/Bio/BioSection";
+import Art from "../components/Homepage/Art/Art";
+import BioSection from "../components/Homepage/Bio/BioSection";
 // import BioServerC from "@/components/server/Homepage/Bio/BioServerC";
 // import ProjectsSection from "@/components/server/Homepage/CurrentProjects/ProjectsSectionServC";
-import HeroServer from "@/components/Homepage/Hero/HeroServer";
+import HeroServer from "../components/Homepage/Hero/HeroServer";
 // import MerchSection from "@/components/server/Homepage/Merchandise/MerchSectionServC";
 // import BlogPost from "@/components/server/Homepage/BlogSection/BlogPost";
 // import SocialMediaLinks from "@/components/server/Homepage/Links/SocialMediaLinks";

@@ -1,4 +1,4 @@
-import Section from "@/components/Art-Pages/Section"
+import Section from "../../components/Art-Pages/Section";
 
 const photoBucket = [
   '/backgroundEdgy.jpg',

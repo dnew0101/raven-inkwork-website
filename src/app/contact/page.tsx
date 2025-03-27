@@ -1,4 +1,4 @@
-import Webform from "@/components/Web-Form/Webform"
+import Webform from "../../components/Web-Form/Webform";
 
 function page() {
   return (
