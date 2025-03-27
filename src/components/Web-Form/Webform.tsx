@@ -45,7 +45,7 @@ const Webform = () => {
     return (
         <div className='Webform-Container flex flex-col justify-center items-center border-2 border-white rounded px-4 pb-4 w-[80%] sm:w-[60%] md:w-[55%] xl:w-[40%] mt-8'>
             <Image
-                src={'/assets/Home-Page-Assets/Raven-Question.png'}
+                src={'/Home-Page-Assets/Raven-Question.png'}
                 width={300}
                 height={400}
                 alt='Picture of Raven being curious.'
@@ -132,7 +132,7 @@ const Webform = () => {
                     </Typography>
                     <div className='flex justify-center items-center bg-neutral-200 rounded-full py-4 mt-4'>
                         <Image
-                            src={'/assets/Global-Assets/Email-Sent.png'}
+                            src={'/Global-Assets/Email-Sent.png'}
                             width={150}
                             height={150}
                             alt='Email sent confirmation photo.'

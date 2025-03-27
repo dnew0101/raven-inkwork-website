@@ -10,7 +10,7 @@ const Logo = () => {
       {/* Logo placeholder; request SVG/WEBP file of business logo design 
       SVG for more interactivity, WEBP for more optimization though less responsive. */}
       <Image 
-        src="/assets/RavenInkworkLogo.webp"
+        src="/RavenInkworkLogo.webp"
         alt='Raven Inkworks logo'
         width={60}
         height={60}
