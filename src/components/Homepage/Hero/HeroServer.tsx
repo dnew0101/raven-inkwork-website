@@ -11,7 +11,7 @@ import {
   useTransform
 } from 'framer-motion';
 // import { useInView } from 'react-intersection-observer';
-import Button from '@/components/Globals/Button';
+import Button from '../../Globals/Button';
 import { FaChevronDown } from 'react-icons/fa';
 
 function HeroServer() {
