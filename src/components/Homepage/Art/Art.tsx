@@ -6,10 +6,10 @@
 import EmblaCarousel from "../../Globals/Carousel/EmblaCarousel";
 
 const photoBucket = [
-  '/backgroundEdgy.jpg',
-  '/backgroundNightSky.jpg',
-  '/stock_hero.jpg',
-  '/Home-Page-Assets/Raven-Question.png',
+  '/assets/backgroundEdgy.jpg',
+  '/assets/backgroundNightSky.jpg',
+  '/assets/stock_hero.jpg',
+  '/assets/Home-Page-Assets/Raven-Question.png',
 ];
 
 const Art = () => {

@@ -1,6 +1,5 @@
 "use server";
 import Link from 'next/link';
-import RavenInkworkLogo from '../../../public/RavenInkworkLogo.webp';
 import Image from 'next/image';
 
 const Logo = () => {
@@ -11,7 +10,7 @@ const Logo = () => {
       {/* Logo placeholder; request SVG/WEBP file of business logo design 
       SVG for more interactivity, WEBP for more optimization though less responsive. */}
       <Image 
-        src={RavenInkworkLogo}
+        src="/assets/RavenInkworkLogo.webp"
         alt='Raven Inkworks logo'
         width={60}
         height={60}

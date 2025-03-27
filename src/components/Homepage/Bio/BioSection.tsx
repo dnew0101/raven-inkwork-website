@@ -45,7 +45,7 @@ const BioSection = () => {
 
                 <div className='Image-Container flex justify-center w-[90%]'>
                     <Image 
-                        src='/Home-Page-Assets/Raven-Painting.png'
+                        src='/assets/Home-Page-Assets/Raven-Painting.png'
                         alt='Raven cartoon caricature holding a paint brush'
                         width={300}
                         height={200}
@@ -79,7 +79,7 @@ const BioSection = () => {
 
                   <div className='Image-Container flex justify-center w-[90%]'>
                       <Image 
-                          src='/Home-Page-Assets/Raven!.png'
+                          src='/assets/Home-Page-Assets/Raven!.png'
                           alt='Raven cartoon caricature exclaiming'
                           width={300}
                           height={200}
