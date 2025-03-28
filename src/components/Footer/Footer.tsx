@@ -7,38 +7,41 @@ const Footer = () => {
     const links = [
             {
                 name: 'Instagram',
-                link: 'https://www.instagram.com/',
+                link: 'https://www.instagram.com/raveninkwork/',
                 icon: faInstagram
             },
             {
                 name: 'Reddit',
-                link: 'https://www.bluesky.com/',
+                link: 'https://www.reddit.com/u/SubduedRaven/',
                 icon: faReddit
             },
             {
                 name: 'Threads',
-                link: 'https://www.linkedin.com/',
+                link: 'https://www.threads.net/@raveninkwork/',
                 icon: faThreads
             },
             {
-                name: 'Reddit',
-                link: 'https://www.youtube.com/',
+                name: 'Gmail',
+                link: 'https://mail.google.com/mail/?view=cm&fs=1&to=raveninkwork@gmail.com&su=Direct%20Inquiry',
                 icon: faEnvelope
             }
         ];
     const date = new Date().getFullYear();
 
   return (
-    <div className='relative flex flex-col justify-center align-middle w-full h-[30vh] mt-80'>
-        <Image 
-            src={'/Home-Page-Assets/Raven-Heart.png'}
-            alt='Raven sitting.'
-            width={300}
-            height={300}
-            className='absolute -top-8 right-[20%] sm:right-[30%] md:right-[40%] z-10'
-        />
-        <footer className="relative text-white text-center p-4 mt-56 h-[15vh] w-full border-t border-white bg-black">
-                <ul className='flex flex-row flex-wrap justify-center align-middle py-4 w-full sm:w-[80%] md:w-[60%] lg:w-[50%] mx-auto'>
+    <div className='Raven-Footer-Container relative flex flex-col justify-center align-middle w-full h-[30vh] mt-80'>
+        <div className='absolute w-full h-full min-h-fit flex flex-row justify-center align-middle bottom-[15vh]'>
+            <Image 
+                src={'/Home-Page-Assets/Raven-Heart.png'}
+                alt='Raven sitting.'
+                width={300}
+                height={300}
+                className='z-10 scale-80'
+            />
+        </div>
+        <footer className="relative text-white text-center p-4 h-[15vh] w-full border-t border-white bg-black">
+                <ul className='flex flex-row flex-wrap justify-between sm:justify-center align-middle py-4 w-full 
+                sm:w-[80%] md:w-[60%] lg:w-[50%] mx-auto'>
                             {links.map((link, index) => (
                                 <li key={index} className='w-1/6 flex flex-row justify-center align-middle z-20'>
                                     <a 

@@ -1,15 +1,45 @@
 import Section from "../../components/Art-Pages/Section";
 
-const photoBucket = [
-  '/backgroundEdgy.jpg',
-  '/backgroundNightSky.jpg',
-  '/stock_hero.jpg',
-  '/Home-Page-Assets/Raven-Question.png',
+const AnimePhotoBucket = [
+  '/Fallback-Assets/Tattoos/Anime/Anime_1.webp',
+  '/Fallback-Assets/Tattoos/Anime/Anime_2.webp',
+  '/Fallback-Assets/Tattoos/Anime/Anime_3.webp',
 ];
-
-// const fineLinePhotoBucket = [];
-// const neoTraditionalPhotoBucket = [];
-// const otherPhotoBucket = [];
+const DarkPhotoBucket = [
+  '/Fallback-Assets/Tattoos/Dark/Dark_1.webp',
+  '/Fallback-Assets/Tattoos/Dark/Dark_2.webp',
+  '/Fallback-Assets/Tattoos/Dark/Dark_3.webp',
+];
+const FinelinePhotoBucket = [
+  '/Fallback-Assets/Tattoos/Fineline/Fineline_1.webp',
+  '/Fallback-Assets/Tattoos/Fineline/Fineline_2.webp',
+  '/Fallback-Assets/Tattoos/Fineline/Fineline_3.webp',
+];
+const FloralPhotoBucket = [
+  '/Fallback-Assets/Tattoos/Floral/Floral_1.webp',
+  '/Fallback-Assets/Tattoos/Floral/Floral_2.webp',
+  '/Fallback-Assets/Tattoos/Floral/Floral_3.webp',
+];
+const IllustrativePhotoBucket = [
+  '/Fallback-Assets/Tattoos/Illustrative/Illustrative_1.webp',
+  '/Fallback-Assets/Tattoos/Illustrative/Illustrative_2.webp',
+  '/Fallback-Assets/Tattoos/Illustrative/Illustrative_3.webp',
+];
+const LetteringPhotoBucket = [
+  '/Fallback-Assets/Tattoos/Lettering/Lettering_1.webp',
+  '/Fallback-Assets/Tattoos/Lettering/Lettering_2.webp',
+  '/Fallback-Assets/Tattoos/Lettering/Lettering_3.webp',
+];
+const LineworkPhotoBucket = [
+  '/Fallback-Assets/Tattoos/Linework/Linework_1.webp',
+  '/Fallback-Assets/Tattoos/Linework/Linework_2.webp',
+  '/Fallback-Assets/Tattoos/Linework/Linework_3.webp',
+];
+const NeoTradPhotoBucket = [
+  '/Fallback-Assets/Tattoos/NeoTrad/NeoTrad_1.webp',
+  '/Fallback-Assets/Tattoos/NeoTrad/NeoTrad_2.webp',
+  '/Fallback-Assets/Tattoos/NeoTrad/NeoTrad_3.webp',
+];
 
 function page() {
   return (
@@ -18,22 +48,58 @@ function page() {
       <main className="flex flex-col w-full justify-center items-center gap-y-10">
         <Section
           title="Fine Line"
-          images={photoBucket}
-          caption="Fine line tattoos are a delicate art form that can be used to create intricate designs."
+          images={FinelinePhotoBucket}
+          caption="Fine-line pieces are the majority of my portfolio at this point and what I would consider to be one of my strongest styles. 
+          I love little details and delicate designs, but I also prioritize the longevity and legibility of my work."
           isFlexRowReverse={false}
           />
         <Section
-          title="Neo-Traditional"
-          images={photoBucket}
-          caption="Neo-traditional tattoos are a modern take on the traditional style, with bold lines and bright colors."
+          title="Illustrative"
+          images={IllustrativePhotoBucket}
+          caption="While I do tend to use delicate lines for smaller details, similar to my fineline work, my illustrative projects tend to be more focused on wildlife. 
+          I also use a wider variety of line weights and add more shading/contrast."
           isFlexRowReverse={true}
           />
         <Section
-          title="Something Else"
-          images={photoBucket}
-          caption="Blank..."
+          title="Neo-Traditional"
+          images={NeoTradPhotoBucket}
+          caption="I am absolutely in love with the Neo-Traditional style, and would be so excited to take on more work like this. 
+          I am currently offering a discounted rate for Neo-Traditional projects so don’t hesitate to send me your ideas!"
           isFlexRowReverse={false}
           />
+        <Section
+          title="Dark"
+          images={DarkPhotoBucket}
+          caption="With a bit of a melting pot for styles this is a collection of my work that has a heavier focus on bold designs and dark statement pieces. 
+          I am very comfortable in this style as well and am always willing to work on similar designs."
+          isFlexRowReverse={true}
+          />
+        <Section
+          title="Anime"
+          images={AnimePhotoBucket}
+          caption="A collection of panels or artwork from anime or manga. I love doing everything from Studio Ghibli to Junji Ito. 
+          My attention to detail and variety of technique allow me to use a range of skills. I love projects like these."
+          isFlexRowReverse={false}
+          />
+        <Section
+          title="Floral"
+          images={FloralPhotoBucket}
+          caption="Mostly delicate and fineline work. I’ve worked on countless floral projects and always enjoy working on them, taking from real images or scientific illustration. "
+          isFlexRowReverse={true}
+          />
+        <Section
+          title="Lettering"
+          images={LetteringPhotoBucket}
+          caption="While not necessarily a “style” I do know script and lettering is a specific category that I feel the need to highlight. 
+          I have done plenty of lettering pieces - from delicate cursive to bold traditional lettering."
+          isFlexRowReverse={false}
+          />
+        {/* <Section
+          title="Linework"
+          images={LineworkPhotoBucket}
+          caption="Line work tattoos are a popular choice for those looking for a more minimalist design, with their bold lines and bright colors."
+          isFlexRowReverse={true}
+          /> */}
       </main>
     </div>
   )

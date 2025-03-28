@@ -54,12 +54,9 @@ const BioSection = () => {
                 </div>
                 <div className='Text-Container flex justify-center w-[90%]
                 p-4 border-2 border-white'>
-                    <p className='flex flex-col text-xs text-center justify-center'>
-                    I take my time with every client that comes to me - from the consultation process to the actual appointment. I want to ensure that you always feel informed, involved, and of course that you are comfortable throughout the experience and with the end result. I am always trying to provide a safe space for everybody; I offer a judgement free zone, fidget toys to mess with, and more. I also offer design check in appointments for anyone who may be anxious about the final design and uncomfortable with waiting until the day of. No matter what I always make sure there is plenty of time within my schedule for design changes and plenty of breaks; so you never feel rushed or pressured. <br/> <br/>
-
-                    I tend to be a bit more quiet during a session, as I zone into my work, so you are more than welcome to pop in some headphones and hang out. But I’m always open to talking too, especially if that helps to distract from the tattooing. <br/> <br/>
-
-                    I love to do illustrative designs with fine lines and stipple shading - specifically flora and fauna subject matter. I also love to do dark/horror work, although most of my clients get the previously mentioned style. I am extremely comfortable with traditional and blackwork, however, I would absolutely love to work on more neotraditional and color projects!
+                    <p className='flex flex-col text-sm sm:text-lg text-center justify-center'>
+                    I prioritize a comfortable, collaborative experience, from consultation to final result. I offer a judgment-free space with amenities like fidget toys and design check-ins. I schedule ample time for breaks and adjustments, ensuring you never feel rushed. <br/><br/>
+                    My style leans towards illustrative fine line and stipple, particularly flora and fauna, and dark/horror. While I'm proficient in traditional and blackwork, I'm eager to explore neotraditional and color projects. I tend to focus quietly during sessions, but I'm always open to conversation.
                     </p>
                 </div>
               </div>
@@ -86,12 +83,13 @@ const BioSection = () => {
                       />
                   </div>
                   <div className='Text-Container flex justify-center w-[90%] p-4 border-2 border-white'>
-                      <p className='flex flex-col text-xs text-center justify-center'>
+                      <p className='flex flex-col text-sm text-center justify-center'>
                         I was born and raised in Washington and have alway been fascinated with nature and animals, I even have an extensive collection of books on wildlife that I reference for some of my work. I also love to travel and learn about different cultures - even living in a foreign country for roughly a year. I love hearing about people’s experiences and stories, as well as sharing my own. <br/><br/>
 
                         I practice many different forms of media for visual art including photography, painting, drawing, digital art, and more. <br/><br/>
 
                         As someone who is a part of the LGBTQ+ community, is neurodivergent, and struggles with extreme anxiety and ADHD I understand that the tattoo community may not always feel the most welcoming to everyone - and I want to change that.
+
                       </p>
                   </div>
               </div>

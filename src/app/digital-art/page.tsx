@@ -1,15 +1,16 @@
 import Section from "../../components/Art-Pages/Section";
 
-const photoBucket = [
-  '/backgroundEdgy.jpg',
-  '/backgroundNightSky.jpg',
-  '/stock_hero.jpg',
-  '/Home-Page-Assets/Raven-Question.png',
+const redditAvatars = [
+  '/Fallback-Assets/Digital-Art/Reddit/Avatar_1.webp',
+  '/Fallback-Assets/Digital-Art/Reddit/Avatar_2.webp',
+  '/Fallback-Assets/Digital-Art/Reddit/Avatar_3.webp',
+  '/Fallback-Assets/Digital-Art/Reddit/Avatar_4.webp',
 ];
-
-// const fineLinePhotoBucket = [];
-// const neoTraditionalPhotoBucket = [];
-// const otherPhotoBucket = [];
+const commissionedWork = [
+  '/Fallback-Assets/Digital-Art/Commission/Commission_1.webp',
+  '/Fallback-Assets/Digital-Art/Commission/Commission_2.webp',
+  '/Fallback-Assets/Digital-Art/Commission/Commission_3.webp',
+];
 
 function page() {
   return (
@@ -18,21 +19,15 @@ function page() {
       <main className="flex flex-col w-full justify-center items-center gap-y-10">
         <Section
           title="Reddit"
-          images={photoBucket}
-          caption="Reddit art collection..."
+          images={redditAvatars}
+          caption="A collection of my favorite Reddit Avatars that I’ve made. I’ve been doing them for about a year now and find it very fun to try and challenge myself to make new and creative works within the given guidelines. "
           isFlexRowReverse={false}
           />
         <Section
-          title="2-D Pixel Art"
-          images={photoBucket}
-          caption="Pixel art for games..."
+          title="Commissioned Work" 
+          images={commissionedWork}
+          caption="These are pieces I have done as commissioned work, primarily for Reddit communities that I am a part of. This includes a crypto coin logo, story art, and more. "
           isFlexRowReverse={true}
-          />
-        <Section
-          title="Illustrative"
-          images={photoBucket}
-          caption="Illustrative art..."
-          isFlexRowReverse={false}
           />
       </main>
     </div>

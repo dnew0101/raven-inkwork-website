@@ -1,15 +1,20 @@
 import Section from "../../components/Art-Pages/Section";
 
-const photoBucket = [
-  '/backgroundEdgy.jpg',
-  '/backgroundNightSky.jpg',
-  '/stock_hero.jpg',
-  '/Home-Page-Assets/Raven-Question.png',
+const LandscapePhotoBucket = [
+  '/Fallback-Assets/Photography/Landscape/Landscape_1.webp',
+  '/Fallback-Assets/Photography/Landscape/Landscape_2.webp',
+  '/Fallback-Assets/Photography/Landscape/Landscape_3.webp',
 ];
-
-// const fineLinePhotoBucket = [];
-// const neoTraditionalPhotoBucket = [];
-// const otherPhotoBucket = [];
+const CritterPhotoBucket = [
+  '/Fallback-Assets/Photography/Critter/Critter_1.webp',
+  '/Fallback-Assets/Photography/Critter/Critter_2.webp',
+  '/Fallback-Assets/Photography/Critter/Critter_3.webp',
+];
+const PortraitPhotoBucket = [
+  '/Fallback-Assets/Photography/Portrait/Portrait_1.webp',
+  '/Fallback-Assets/Photography/Portrait/Portrait_2.webp',
+  '/Fallback-Assets/Photography/Portrait/Portrait_3.webp',
+];
 
 function page() {
   return (
@@ -18,20 +23,21 @@ function page() {
       <main className="flex flex-col w-full justify-center items-center gap-y-10">
         <Section
           title="Landscape"
-          images={photoBucket}
-          caption="Landscapes are a popular subject for photographers, with their wide open spaces and beautiful scenery."
+          images={LandscapePhotoBucket}
+          caption="My typical subject for photography. I love finding interesting architecture or striking scenes. I especially love moody settings."
           isFlexRowReverse={false}
           />
         <Section
           title="Portrait"
-          images={photoBucket}
-          caption="Portrait photography is a great way to capture the personality of your subject."
+          images={PortraitPhotoBucket}
+          caption="Admittedly, this is not my strong suit in photography - I do find it fun! I would love to do more portrait work with some sort of theming or more outside of the box ideas."
           isFlexRowReverse={true}
           />
         <Section
           title="Critters"
-          images={photoBucket}
-          caption="Critters are a fun subject for photographers, with their playful antics and cute faces."
+          images={CritterPhotoBucket}
+          caption="I am a sucker for finding little critters and animals to capture! As my luck would have it I usually find the coolest things when I don’t have my camera on me. 
+          But whenever I do it’s so exciting. I've sat in the rain for hours just waiting to capture a bird or something special and I love the process."
           isFlexRowReverse={false}
           />
       </main>

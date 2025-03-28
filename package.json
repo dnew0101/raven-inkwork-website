@@ -19,6 +19,7 @@
     "@mui/material": "^7.0.0",
     "embla-carousel": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
+    "firebase": "^11.5.0",
     "framer-motion": "^12.4.10",
     "next": "15.2.0",
     "react": "^19.0",

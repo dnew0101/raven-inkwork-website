@@ -5,11 +5,12 @@
  */
 import EmblaCarousel from "../../Globals/Carousel/EmblaCarousel";
 
-const photoBucket = [
-  '/backgroundEdgy.jpg',
-  '/backgroundNightSky.jpg',
-  '/stock_hero.jpg',
-  '/Home-Page-Assets/Raven-Question.png',
+const featuredArt = [
+  '/Fallback-Assets/Featured-Art/Featured_1.webp',
+  '/Fallback-Assets/Featured-Art/Featured_2.webp',
+  '/Fallback-Assets/Featured-Art/Featured_3.webp',
+  '/Fallback-Assets/Featured-Art/Featured_4.webp',
+  '/Fallback-Assets/Featured-Art/Featured_5.webp',
 ];
 
 const Art = () => {
@@ -20,7 +21,7 @@ const Art = () => {
 
         <div className='Mobile-Carousel-Container relative flex 
         h-full justify-center items-center'>
-          <EmblaCarousel slides={photoBucket}></EmblaCarousel>
+          <EmblaCarousel slides={featuredArt}></EmblaCarousel>
         </div>
       </div>
     </div>

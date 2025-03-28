@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raven Inkworks",
+  title: "Raven Inkwork",
   description: "Multimedia artist, specializing in tattoo, digital art, and photography. Located in Tacoma, Washington.",
 };
 
