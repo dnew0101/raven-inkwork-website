@@ -20,7 +20,11 @@ function page() {
         <Section
           title="Reddit"
           images={redditAvatars}
-          caption="This is a collection of my favorite Reddit Avatars that I&#39;ve made. I&#39;ve been doing them for about a year now and find it very fun to try and challenge myself to make new and creative works within the given guidelines."
+          caption={
+          <>
+            <span>This is a collection of my favorite <a href="https://www.reddit.com/avatar/shop/artist/SubduedRaven" className="text-blue-500 underline">Reddit Avatars</a> that I&apos;ve made. I&apos;ve been doing them for about a year now and find it very fun to try and challenge myself to make new and creative works within the given guidelines.</span>
+          </>
+          }
           isFlexRowReverse={false}
           />
         <Section

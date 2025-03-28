@@ -3,7 +3,7 @@ import EmblaCarousel from '../Globals/Carousel/EmblaCarousel';
 type SectionsProps = {
     title: string;
     images: string[];
-    caption: string;
+    caption: string | React.ReactNode;
     isFlexRowReverse: boolean;
 }
 
