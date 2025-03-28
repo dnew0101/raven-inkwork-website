@@ -49,8 +49,8 @@ function page() {
         <Section
           title="Fine Line"
           images={FinelinePhotoBucket}
-          caption="Fine-line pieces are the majority of my portfolio at this point and what I would consider to be one of my strongest styles. 
-          I love little details and delicate designs, but I also prioritize the longevity and legibility of my work."
+          caption={`Fine-line pieces are the majority of my portfolio at this point and what I would consider to be one of my strongest styles. 
+          I love little details and delicate designs, but I also prioritize the longevity and legibility of my work.`}
           isFlexRowReverse={false}
           />
         <Section
@@ -63,8 +63,7 @@ function page() {
         <Section
           title="Neo-Traditional"
           images={NeoTradPhotoBucket}
-          caption="I am absolutely in love with the Neo-Traditional style, and would be so excited to take on more work like this. 
-          I am currently offering a discounted rate for Neo-Traditional projects so don’t hesitate to send me your ideas!"
+          caption="I am absolutely in love with the Neo-Traditional style, and would be so excited to take on more work like this. I am currently offering a discounted rate for Neo-Traditional projects so don&#39;t hesitate to send me your ideas!"
           isFlexRowReverse={false}
           />
         <Section
@@ -84,13 +83,13 @@ function page() {
         <Section
           title="Floral"
           images={FloralPhotoBucket}
-          caption="Mostly delicate and fineline work. I’ve worked on countless floral projects and always enjoy working on them, taking from real images or scientific illustration. "
+          caption="Mostly delicate and fineline work. I&#39;ve worked on countless floral projects and always enjoy working on them, taking from real images or scientific illustration."
           isFlexRowReverse={true}
           />
         <Section
           title="Lettering"
           images={LetteringPhotoBucket}
-          caption="While not necessarily a “style” I do know script and lettering is a specific category that I feel the need to highlight. 
+          caption="While not necessarily a &#34;style&#34; I do know script and lettering is a specific category that I feel the need to highlight. 
           I have done plenty of lettering pieces - from delicate cursive to bold traditional lettering."
           isFlexRowReverse={false}
           />

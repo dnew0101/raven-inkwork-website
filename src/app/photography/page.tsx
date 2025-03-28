@@ -36,8 +36,8 @@ function page() {
         <Section
           title="Critters"
           images={CritterPhotoBucket}
-          caption="I am a sucker for finding little critters and animals to capture! As my luck would have it I usually find the coolest things when I don’t have my camera on me. 
-          But whenever I do it’s so exciting. I've sat in the rain for hours just waiting to capture a bird or something special and I love the process."
+          caption="I am a sucker for finding little critters and animals to capture! As my luck would have it I usually find the coolest things when I don&#39;t have my camera on me. 
+          But whenever I do it&#39;s so exciting. I've sat in the rain for hours just waiting to capture a bird or something special and I love the process."
           isFlexRowReverse={false}
           />
       </main>

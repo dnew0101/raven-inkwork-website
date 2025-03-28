@@ -20,13 +20,13 @@ function page() {
         <Section
           title="Reddit"
           images={redditAvatars}
-          caption="A collection of my favorite Reddit Avatars that I’ve made. I’ve been doing them for about a year now and find it very fun to try and challenge myself to make new and creative works within the given guidelines. "
+          caption="This is a collection of my favorite Reddit Avatars that I&#39;ve made. I&#39;ve been doing them for about a year now and find it very fun to try and challenge myself to make new and creative works within the given guidelines."
           isFlexRowReverse={false}
           />
         <Section
           title="Commissioned Work" 
           images={commissionedWork}
-          caption="These are pieces I have done as commissioned work, primarily for Reddit communities that I am a part of. This includes a crypto coin logo, story art, and more. "
+          caption="These are pieces I have done as commissioned work, primarily for Reddit communities that I am a part of. This includes a crypto coin logo, story art, and more."
           isFlexRowReverse={true}
           />
       </main>
