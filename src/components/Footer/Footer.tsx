@@ -30,13 +30,13 @@ const Footer = () => {
 
   return (
     <div className='Raven-Footer-Container relative flex flex-col justify-center align-middle w-full h-[30vh] mt-80'>
-        <div className='absolute w-full h-full min-h-fit flex flex-row justify-center align-middle bottom-[15vh]'>
+        <div className='absolute w-full h-full min-h-fit flex flex-row justify-center align-middle bottom-[10vh] sm:bottom-[13vh]'>
             <Image 
                 src={'/Home-Page-Assets/Raven-Heart.png'}
                 alt='Raven sitting.'
                 width={300}
                 height={300}
-                className='z-10 scale-80'
+                className='z-10 scale-40 sm:scale-80'
             />
         </div>
         <footer className="relative text-white text-center p-4 h-[15vh] w-full border-t border-white bg-black">

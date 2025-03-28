@@ -92,6 +92,7 @@ const Webform = () => {
                     sitekey={publicSiteKey || ''}
                     onChange={handleCaptchaChange}
                     theme='dark'
+                    size='compact'
                 />
                 <button 
                     type='submit'

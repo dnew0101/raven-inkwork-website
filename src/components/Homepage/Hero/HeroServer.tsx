@@ -17,8 +17,8 @@ import { FaChevronDown } from 'react-icons/fa';
 function HeroServer() {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, 50]);
-  // const y2 = useTransform(scrollY, [0, 300], [0, 100]);
-  const y3 = useTransform(scrollY, [0, 300], [0, 150]);
+  const y2 = useTransform(scrollY, [0, 300], [0, 100]);
+  // const y3 = useTransform(scrollY, [0, 300], [0, 150]);
   const chevronOpacity = useTransform(scrollY, [0, 100], [1, 0]);
   
   // const [ref, inView, entry] = useInView({
@@ -37,7 +37,7 @@ function HeroServer() {
 
 
   return (
-    <div className="relative flex flex-col items-center h-[100vh] w-full mt-[20vh]">
+    <div className="relative flex flex-col items-center h-[100vh] w-full mt-[10vh] sm:mt-[15vh] md:mt-[20vh]">
       <div className='-z-10 mb-[10vh]'>
         <motion.h1 
         className="flex flex-row gap-2 flex-wrap justify-center sm:border"
@@ -51,7 +51,7 @@ function HeroServer() {
         </motion.h1>
         <motion.p 
         className="flex text-white text-lg mt-2 justify-center flex-wrap"
-        style={{ y: y3 }}>
+        style={{ y: y2 }}>
           Custom art, from <span className='mx-1.5'>tattoos</span> to <span className='mx-1.5'>game sprites!</span>
         </motion.p>
       </div>

@@ -36,9 +36,9 @@ const BioSection = () => {
           border-2 border-white py-8 sm:p-6 md:p-8"
           style={{ y: y2 }}>
 
-              <motion.h1 className='text-center mb-4'>
+              <motion.h2 className='text-center text-3xl sm:text-5xl px-2'>
                 Am I the right artist for you?
-              </motion.h1>
+              </motion.h2>
 
               <div className='Content-Container flex flex-col gap-2
               justify-center items-center w-full h-full'>
@@ -49,12 +49,12 @@ const BioSection = () => {
                         alt='Raven cartoon caricature holding a paint brush'
                         width={300}
                         height={200}
-                        
+                        className='scale-80'
                     />
                 </div>
                 <div className='Text-Container flex justify-center w-[90%]
-                p-4 border-2 border-white'>
-                    <p className='flex flex-col text-sm sm:text-lg text-center justify-center'>
+                p-4 border-2 border-white lg:w-[50%]'>
+                    <p className='flex flex-col text-xs sm:text-sm text-center justify-center'>
                     I prioritize a comfortable, collaborative experience, from consultation to final result. I offer a judgment-free space with amenities like fidget toys and design check-ins. I schedule ample time for breaks and adjustments, ensuring you never feel rushed. <br/><br/>
                     My style leans towards illustrative fine line and stipple, particularly flora and fauna, and dark/horror. While I&#39;m proficient in traditional and blackwork, I&#39;m eager to explore neotraditional and color projects. I tend to focus quietly during sessions, but I&#39;m always open to conversation.
                     </p>
@@ -69,7 +69,9 @@ const BioSection = () => {
             border-2 border-white py-8 sm:p-6 md:p-8"
             style={{ y: y2 }}>
 
-              <h1 className='text-center mb-4'>Get to know me!</h1>
+              <motion.h2 className='text-center text-3xl sm:text-5xl px-2 pb-4'>
+                Am I the right artist for you?
+              </motion.h2>
 
               <div className='Content-Container flex flex-col-reverse gap-2
               justify-center items-center w-full h-full'>
@@ -80,13 +82,22 @@ const BioSection = () => {
                           alt='Raven cartoon caricature exclaiming'
                           width={300}
                           height={200}
+                          className='scale-80'
                       />
                   </div>
-                  <div className='Text-Container flex justify-center w-[90%] p-4 border-2 border-white'>
-                    <p className='flex flex-col text-sm text-center justify-center'>
-                      I was born and raised in Washington and have always been fascinated with nature and animals, I even have an extensive collection of books on wildlife that I reference for some of my work. I also love to travel and learn about different cultures - even living in a foreign country for roughly a year. I love hearing about people&#39;s experiences and stories, as well as sharing my own. <br/><br/>
-                      I practice many different forms of media for visual art including photography, painting, drawing, digital art, and more. <br/><br/>
-                      As someone who is a part of the LGBTQ+ community, is neurodivergent, and struggles with extreme anxiety and ADHD I understand that the tattoo community may not always feel the most welcoming to everyone - and I want to change that.
+                  <div className='Text-Container flex justify-center w-[90%] p-4 border-2 border-white
+                  lg:w-[50%]'>
+                    <p className='flex flex-col text-xs sm:text-sm text-center justify-center w-full'>
+                        <span>
+                          I was born and raised in Washington and have always been fascinated with nature and animals, I even have an extensive collection of books on wildlife that I reference for some of my work. I also love to travel and learn about different cultures - even living in a foreign country for roughly a year. I love hearing about people&#39;s experiences and stories, as well as sharing my own. <br/><br/>
+                          I practice many different forms of media for visual art including photography, painting, drawing, digital art, and more. <br/><br/>
+                          As someone who is a part of the <strong><span className='text-red-500'>L</span>
+                          <span className=' text-amber-600'>G</span>
+                          <span className=' text-yellow-500'>B</span>
+                          <span className=' text-green-500'>T</span>
+                          <span className=' text-blue-500'>Q</span>
+                          <span className=' text-purple-500'>+</span></strong> community, is neurodivergent, and struggles with extreme anxiety and ADHD I understand that the tattoo community may not always feel the most welcoming to everyone - and I want to change that.
+                        </span>
                     </p>
                   </div>
               </div>

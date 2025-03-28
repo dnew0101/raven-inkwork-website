@@ -19,10 +19,10 @@ const Section = ({title, images, caption, isFlexRowReverse} : SectionsProps) => 
           
             <article className='Text-Container flex flex-col justify-center w-[90%]
                 md:w-[70%] lg:w-[50%] xl:w-[40%] lg:h-full p-4 text-center'>
-                  <h1 className='lg:h-[200px] flex flex-col text-4xl text-center justify-center'>
+                  <h2 className=' flex flex-col text-3xl sm:text-5xl text-center justify-center'>
                     {title}
-                  </h1>
-                  <summary className='flex flex-col text-md text-center justify-center mt-4
+                  </h2>
+                  <summary className='flex flex-col text-sm sm:text-lg text-center justify-center mt-4
                   border-2 border-white lg:my-10 p-4'>
                     {caption}
                   </summary>
