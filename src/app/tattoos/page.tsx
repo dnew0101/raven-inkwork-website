@@ -30,11 +30,11 @@ const LetteringPhotoBucket = [
   '/Fallback-Assets/Tattoos/Lettering/Lettering_2.webp',
   '/Fallback-Assets/Tattoos/Lettering/Lettering_3.webp',
 ];
-const LineworkPhotoBucket = [
-  '/Fallback-Assets/Tattoos/Linework/Linework_1.webp',
-  '/Fallback-Assets/Tattoos/Linework/Linework_2.webp',
-  '/Fallback-Assets/Tattoos/Linework/Linework_3.webp',
-];
+// const LineworkPhotoBucket = [
+//   '/Fallback-Assets/Tattoos/Linework/Linework_1.webp',
+//   '/Fallback-Assets/Tattoos/Linework/Linework_2.webp',
+//   '/Fallback-Assets/Tattoos/Linework/Linework_3.webp',
+// ];
 const NeoTradPhotoBucket = [
   '/Fallback-Assets/Tattoos/NeoTrad/NeoTrad_1.webp',
   '/Fallback-Assets/Tattoos/NeoTrad/NeoTrad_2.webp',

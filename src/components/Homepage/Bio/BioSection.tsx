@@ -83,14 +83,11 @@ const BioSection = () => {
                       />
                   </div>
                   <div className='Text-Container flex justify-center w-[90%] p-4 border-2 border-white'>
-                      <p className='flex flex-col text-sm text-center justify-center'>
-                        I was born and raised in Washington and have alway been fascinated with nature and animals, I even have an extensive collection of books on wildlife that I reference for some of my work. I also love to travel and learn about different cultures - even living in a foreign country for roughly a year. I love hearing about people’s experiences and stories, as well as sharing my own. <br/><br/>
-
-                        I practice many different forms of media for visual art including photography, painting, drawing, digital art, and more. <br/><br/>
-
-                        As someone who is a part of the LGBTQ+ community, is neurodivergent, and struggles with extreme anxiety and ADHD I understand that the tattoo community may not always feel the most welcoming to everyone - and I want to change that.
-
-                      </p>
+                    <p className='flex flex-col text-sm text-center justify-center'>
+                      I was born and raised in Washington and have always been fascinated with nature and animals, I even have an extensive collection of books on wildlife that I reference for some of my work. I also love to travel and learn about different cultures - even living in a foreign country for roughly a year. I love hearing about people&#39;s experiences and stories, as well as sharing my own. <br/><br/>
+                      I practice many different forms of media for visual art including photography, painting, drawing, digital art, and more. <br/><br/>
+                      As someone who is a part of the LGBTQ+ community, is neurodivergent, and struggles with extreme anxiety and ADHD I understand that the tattoo community may not always feel the most welcoming to everyone - and I want to change that.
+                    </p>
                   </div>
               </div>
           </motion.div>
