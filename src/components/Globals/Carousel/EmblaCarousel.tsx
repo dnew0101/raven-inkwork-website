@@ -165,8 +165,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               }}
             >
               <button
-                className="absolute flex justify-center items-center top-2 right-2 text-white text-2xl bg-red-400 opacity-65 
-                hover:scale-125 hover:opacity-100 hover:bg-red-400 transition-all duration-200 rounded-full p-2.5 w-5 h-5 border-2 border-white"
+                className="absolute flex justify-center items-center top-2 right-2 text-white text-4xl opacity-80
+                hover:scale-125 hover:opacity-100 transition-all duration-200 rounded-full p-3 w-6 h-6"
                 onClick={closeModal}
               >
                 &times;
