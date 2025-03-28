@@ -11,9 +11,11 @@ export default function Document() {
           crossOrigin="anonymous"
         />
         <link
+          rel='preload'
           href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
-          rel="stylesheet"
+          as="style"
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />

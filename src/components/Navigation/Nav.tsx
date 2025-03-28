@@ -1,12 +1,12 @@
 "use client";
 import dynamic from 'next/dynamic';
-import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 /**
  * Dynamic imports from heavier modules
  */
 const AnimatePresence = dynamic(() => import('framer-motion').then(mod => mod.AnimatePresence));
+const MotionDiv = dynamic(() => import('framer-motion').then((mod) => mod.motion.div), { ssr: false });
 const NavButton = dynamic(() => import('./NavButton'));
 const NavLinks = dynamic(() => import('./NavLinks'));
 
@@ -53,7 +53,7 @@ const Nav = () => {
             */}
             <AnimatePresence>
                 {isOpen && (
-                    <motion.div 
+                    <MotionDiv 
                     className='fixed left-0 top-0 w-full h-screen origin-top bg-black bg-opacity-90'
                     variants={menuVariants}
                     initial='initial'
@@ -63,7 +63,7 @@ const Nav = () => {
                         getClicked={isOpen}
                         setClicked={toggleNav}
                         />
-                    </motion.div>
+                    </MotionDiv>
                 )}
             </AnimatePresence>
         </>

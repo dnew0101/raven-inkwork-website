@@ -1,4 +1,6 @@
-import EmblaCarousel from '../Globals/Carousel/EmblaCarousel';
+import dynamic from "next/dynamic"
+
+const EmblaCarousel = dynamic(() => import("../Globals/Carousel/EmblaCarousel"));
 
 type SectionsProps = {
     title: string;

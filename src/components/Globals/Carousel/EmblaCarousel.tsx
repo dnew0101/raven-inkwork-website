@@ -13,7 +13,10 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 
-import { motion, AnimatePresence } from 'framer-motion'
+import dynamic from 'next/dynamic';
+
+const MotionDiv = dynamic(() => import('framer-motion').then((mod) => mod.motion.div), { ssr: false });
+const AnimatePresence = dynamic(() => import('framer-motion').then((mod) => mod.AnimatePresence), { ssr: false });
 
 const TWEEN_FACTOR_BASE = 0.2
 
@@ -134,7 +137,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                     src={slide}
                     alt={`Photo ${index} in carousel collection`}
                     width={500}
-                    height={500}
+                    height={400}
+                    priority={index === 0}
+                    loading={index === 0 ? 'eager' : 'lazy'}
                     onClick={() => handleImageClick(index)}
                   />
                 </div>
@@ -145,14 +150,14 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       </div>
       {isModalOpen && (
         <AnimatePresence>
-          <motion.div 
+          <MotionDiv 
             className="modal fixed inset-0 flex justify-center items-center bg-black/80 backdrop-blur-sm z-40"
             onClick={closeModal}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <motion.div 
+            <MotionDiv 
               className="modal-content relative h-[60vh] w-[50vh]"
               onClick={(e) => e.stopPropagation()}
               initial={{ scale: 0.8, opacity: 0 }}
@@ -178,8 +183,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 height={800}
                 className="rounded-xl z-50"
               />
-            </motion.div>
-          </motion.div>
+            </MotionDiv>
+          </MotionDiv>
         </AnimatePresence>
       )}
 
