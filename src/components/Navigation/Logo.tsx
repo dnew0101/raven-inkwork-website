@@ -9,12 +9,12 @@ const Logo = () => {
       href='/'>
       {/* Logo placeholder; request SVG/WEBP file of business logo design 
       SVG for more interactivity, WEBP for more optimization though less responsive. */}
-      <Image 
-        src="/Global-Assets/RavenInkworkLogo.webp"
-        alt='Raven Inkworks logo'
-        width={60}
-        height={60}
-        />
+        <Image 
+          src="/Global-Assets/RavenInkworkLogo.webp"
+          alt='Raven Inkworks logo'
+          width={60}
+          height={60}
+          />
     </Link>
   )
 }

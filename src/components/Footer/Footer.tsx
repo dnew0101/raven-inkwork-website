@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faReddit, faThreads } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const Footer = () => {
     const links = [
@@ -29,16 +29,10 @@ const Footer = () => {
     const date = new Date().getFullYear();
 
   return (
-    <div className='Raven-Footer-Container relative flex flex-col justify-center align-middle w-full h-[30vh] mt-80'>
-        <div className='absolute w-full h-full min-h-fit flex flex-row justify-center align-middle bottom-[10vh] sm:bottom-[13vh]'>
-            <Image 
-                src={'/Home-Page-Assets/Raven-Heart.png'}
-                alt='Raven sitting.'
-                width={300}
-                height={300}
-                className='z-10 scale-40 sm:scale-80'
-            />
-        </div>
+    <div className='Raven-Footer-Container relative flex flex-col justify-center align-middle w-full h-[30vh] mt-32'>
+        {/* 
+        TODO: Raven Logo must sit on Footer bar without warping... 
+        */}
         <footer className="relative text-white text-center p-4 h-[15vh] w-full border-t border-white bg-black">
                 <ul className='flex flex-row flex-wrap justify-between sm:justify-center align-middle py-4 w-full 
                 sm:w-[80%] md:w-[60%] lg:w-[50%] mx-auto'>

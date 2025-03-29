@@ -23,11 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <script
-          src="https://www.google.com/recaptcha/api.js"
-          async
-          defer
-        ></script>
+        <title>{String(metadata.title)}</title>
       </Head>
       <body
         className={`${inter.variable} 

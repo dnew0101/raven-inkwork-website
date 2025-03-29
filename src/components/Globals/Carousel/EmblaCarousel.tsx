@@ -136,7 +136,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                     className="embla__slide__img embla__parallax__img"
                     src={slide}
                     alt={`Photo ${index} in carousel collection`}
-                    width={500}
+                    width={400}
                     height={400}
                     priority={index === 0}
                     loading={index === 0 ? 'eager' : 'lazy'}

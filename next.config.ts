@@ -20,22 +20,10 @@ const nextConfig: NextConfig = {
   experimental: {
     scrollRestoration: true,
   },
-  webpack(config, { isServer }) {
-    if (process.env.ANALYZE === "true") {
-      config.plugins.push(new (require("webpack-bundle-analyzer").BundleAnalyzerPlugin)());
-    }
-
-    config.plugins.push(
-      new (require("webpack").IgnorePlugin)({
-        resourceRegExp: /^\.\/locale$/,
-        contextRegExp: /moment$/,
-      })
-    );
-
-    return config;
-  },
 };
 
-module.exports = withBundleAnalyzer(nextConfig);
+module.exports = withBundleAnalyzer({
+  reactStrictMode: true,
+});
 
 export default nextConfig;

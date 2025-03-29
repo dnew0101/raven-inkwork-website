@@ -6,9 +6,9 @@
 "use server";
 import dynamic from 'next/dynamic';
 
-const Nav = dynamic(() => import('./Nav'))
-const Logo = dynamic(() => import('./Logo'))
-const NavCenterText = dynamic(() => import('./NavCenterText'))
+const Nav = dynamic(() => import('./Nav'));
+const Logo = dynamic(() => import('./Logo'));
+const NavCenterText = dynamic(() => import('./NavCenterText'));
 
 
 

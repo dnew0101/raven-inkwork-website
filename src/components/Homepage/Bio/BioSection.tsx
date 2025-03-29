@@ -48,8 +48,9 @@ const BioSection = () => {
                         src='/Home-Page-Assets/Raven-Painting.png'
                         alt='Raven cartoon caricature holding a paint brush'
                         width={300}
-                        height={200}
+                        height={300}
                         className='scale-80'
+                        style={{ width: 'auto', height: 'auto' }}
                     />
                 </div>
                 <div className='Text-Container flex justify-center w-[90%]
@@ -81,8 +82,9 @@ const BioSection = () => {
                           src='/Home-Page-Assets/Raven-Exclaim.png'
                           alt='Raven cartoon caricature exclaiming'
                           width={300}
-                          height={200}
+                          height={300}
                           className='scale-80'
+                          style={{ width: 'auto', height: 'auto' }}
                       />
                   </div>
                   <div className='Text-Container flex justify-center w-[90%] p-4 border-2 border-white
