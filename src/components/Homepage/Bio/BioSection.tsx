@@ -45,12 +45,13 @@ const BioSection = () => {
 
                 <div className='Image-Container flex justify-center w-[90%]'>
                     <Image 
-                        src='/Home-Page-Assets/Raven-Painting.png'
+                        src='/Home-Page-Assets/Raven-Painting.webp'
                         alt='Raven cartoon caricature holding a paint brush'
                         width={300}
                         height={300}
                         className='scale-80'
                         style={{ width: 'auto', height: 'auto' }}
+                        quality={50}
                     />
                 </div>
                 <div className='Text-Container flex justify-center w-[90%]
@@ -79,12 +80,13 @@ const BioSection = () => {
 
                   <div className='Image-Container flex justify-center w-[90%]'>
                       <Image 
-                          src='/Home-Page-Assets/Raven-Exclaim.png'
+                          src='/Home-Page-Assets/Raven-Exclaim.webp'
                           alt='Raven cartoon caricature exclaiming'
                           width={300}
                           height={300}
                           className='scale-80'
                           style={{ width: 'auto', height: 'auto' }}
+                          quality={50}
                       />
                   </div>
                   <div className='Text-Container flex justify-center w-[90%] p-4 border-2 border-white

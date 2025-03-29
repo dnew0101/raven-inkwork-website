@@ -69,11 +69,12 @@ const Webform = () => {
     return (
         <div className='Webform-Container flex flex-col justify-center items-center border-2 border-white rounded px-4 pb-4 w-[80%] sm:w-[60%] md:w-[55%] xl:w-[40%] mt-8'>
             <Image
-                src={'/Home-Page-Assets/Raven-Question.png'}
+                src={'/Home-Page-Assets/Raven-Question.webp'}
                 width={300}
                 height={300}
                 alt='Picture of Raven being curious.'
                 priority
+                quality={50}
             />
             
             <form 
