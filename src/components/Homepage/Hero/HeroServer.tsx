@@ -40,7 +40,7 @@ function HeroServer() {
     <div className="relative flex flex-col items-center h-[100vh] w-full mt-[10vh] sm:mt-[15vh] md:mt-[20vh]">
       <div className='-z-10 mb-[10vh]'>
         <motion.h1 
-        className="flex flex-row gap-2 flex-wrap justify-center sm:border"
+        className="flex flex-row gap-2 flex-wrap text-4xl font-bold justify-center sm:border"
         style={{ y: y1 }}>
             <span className="pl-3">
               Welcome to

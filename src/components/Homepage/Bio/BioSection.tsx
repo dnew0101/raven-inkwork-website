@@ -43,16 +43,15 @@ const BioSection = () => {
               <div className='Content-Container flex flex-col gap-2
               justify-center items-center w-full h-full'>
 
-                <div className='Image-Container flex justify-center w-[90%]'>
-                    <Image 
-                        src='/Home-Page-Assets/Raven-Painting.webp'
-                        alt='Raven cartoon caricature holding a paint brush'
-                        width={300}
-                        height={300}
-                        className='scale-80'
-                        style={{ width: 'auto', height: 'auto' }}
-                        quality={50}
-                    />
+                <div className='Image-Container flex justify-center w-[90%] h-auto'>
+                  <Image 
+                    src='/Home-Page-Assets/Raven-Paintbrush.webp'
+                    alt='Raven cartoon caricature holding a paint brush'
+                    width={250}
+                    height={250}
+                    style={{ width: 'auto', height: 'auto' }}
+                    quality={50}
+                  />
                 </div>
                 <div className='Text-Container flex justify-center w-[90%]
                 p-4 border-2 border-white lg:w-[50%]'>
@@ -72,20 +71,18 @@ const BioSection = () => {
             style={{ y: y2 }}>
 
               <motion.h2 className='text-center text-3xl sm:text-5xl px-2 pb-4'>
-                Am I the right artist for you?
+                About Me
               </motion.h2>
 
               <div className='Content-Container flex flex-col-reverse gap-2
               justify-center items-center w-full h-full'>
 
-                  <div className='Image-Container flex justify-center w-[90%]'>
+                  <div className='Image-Container flex justify-center w-[90%] h-auto'>
                       <Image 
                           src='/Home-Page-Assets/Raven-Exclaim.webp'
                           alt='Raven cartoon caricature exclaiming'
-                          width={300}
-                          height={300}
-                          className='scale-80'
-                          style={{ width: 'auto', height: 'auto' }}
+                          width={250}
+                          height={250}
                           quality={50}
                       />
                   </div>

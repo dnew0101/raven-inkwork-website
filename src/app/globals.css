@@ -2,15 +2,7 @@
 @import "./embla.css";
 
 @theme {
-  --font-sans: var(--font-inter);
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('https://fonts.gstatic.com/s/inter/v12/xyz.woff2') format('woff2');
+  --font-inter: "Inter", sans-serif;
 }
 
 :root {
@@ -21,12 +13,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Inter", var(--font-sans), sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-}
-
-h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #ffffff;
 }

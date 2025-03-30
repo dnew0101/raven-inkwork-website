@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic"
 
-const EmblaCarousel = dynamic(() => import("../Globals/Carousel/EmblaCarousel"));
+const EmblaCarousel = dynamic(
+  () => import("../Globals/Carousel/EmblaCarousel")
+);
 
 type SectionsProps = {
     title: string;
@@ -11,7 +13,10 @@ type SectionsProps = {
 
 const Section = ({title, images, caption, isFlexRowReverse} : SectionsProps) => {
   return (
-    <section className="Recyclable-Section relative flex flex-col justify-center items-center h-auto w-full">
+    <section 
+      className="Recyclable-Section relative flex flex-col justify-center items-center h-auto w-full"
+      style={{ contain: "layout" }}
+    >
       <div className='flex flex-col gap-8 w-full items-center'>
       <div
           className={`flex flex-col ${
@@ -26,7 +31,7 @@ const Section = ({title, images, caption, isFlexRowReverse} : SectionsProps) => 
                   </h2>
                   <summary className='flex flex-col text-sm sm:text-lg text-center justify-center mt-4
                   border-2 border-white lg:my-10 p-4'>
-                    {caption}
+                    <p>{caption}</p>
                   </summary>
             </article>
             <figure className='Carousel-Container flex flex-col gap-2
