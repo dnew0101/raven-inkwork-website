@@ -90,25 +90,57 @@ export default function RootLayout({
         '@type': 'TattooParlor',
         name: 'Brass Monkey 2',
         description: 'Popular Tacoma street shop. Raye still guest spots here occassionally.',
-        url: 'https://www.yelp.com/biz/brass-monkey-2-tattoo-tacoma'
+        url: 'https://www.yelp.com/biz/brass-monkey-2-tattoo-tacoma',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '3505 6th Avenue',
+          addressLocality: 'Tacoma',
+          addressRegion: 'WA',
+          postalCode: '98406',
+          addressCountry: 'US'
+        },
       },
       {
         '@type': 'TattooParlor',
         name: 'Rare Breed Ink',
         description: 'One of the best appointment-only tattoo shops in Tacoma. Los and Sam are both amazing artists.',
-        url: 'https://www.rarebreedinkstudio.com/'
+        url: 'https://www.rarebreedinkstudio.com/',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '711 St Helens Ave #201',
+          addressLocality: 'Tacoma',
+          addressRegion: 'WA',
+          postalCode: '98402',
+          addressCountry: 'US'
+        },
       },
       {
         '@type': 'TattooParlor',
         name: 'Cicada Tattoo',
         description: 'Tacoma location of a well-known Seattle tattoo shop.',
-        url: 'https://cicadatattoo.com/'
+        url: 'https://cicadatattoo.com/',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '1128 S L St',
+          addressLocality: 'Tacoma',
+          addressRegion: 'WA',
+          postalCode: '98405',
+          addressCountry: 'US'
+        },
       },
       {
         '@type': 'TattooParlor',
         name: 'Pacific Ave Tattoo', 
         description: 'Popular street shop in downtown Tacoma where I gained early experience in the industry.',
-        url: 'https://www.yelp.com/biz/pacific-ave-tattoo-tacoma' 
+        url: 'https://www.yelp.com/biz/pacific-ave-tattoo-tacoma',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '4822 Pacific Ave',
+          addressLocality: 'Tacoma',
+          addressRegion: 'WA',
+          postalCode: '98408',
+          addressCountry: 'US'
+        },
       },
   ],
     makesOffer: [
