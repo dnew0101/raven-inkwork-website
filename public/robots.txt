@@ -1,0 +1,48 @@
+# Raven Inkwork Website - Robot Rules
+
+# Allow major search engines only
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block all aggressive crawlers with stricter rules
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# Additional problematic crawlers
+User-agent: DotBot
+Disallow: /
+
+User-agent: Sogou web spider
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# Rules for all other bots
+User-agent: *
+Disallow: /api/
+Allow: /
+
+# Sitemap location
+Sitemap: https://raveninkwork.com/sitemap.xml
