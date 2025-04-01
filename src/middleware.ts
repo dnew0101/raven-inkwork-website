@@ -19,7 +19,8 @@ export function middleware(request: NextRequest) {
     const blockedPaths = [
         '/wp-admin', '/wp-login.php', '/administrator', '/.git/', '/.env', 
         '/lander', '/setup-config.php', '/xmlrpc.php', '/wp-includes',
-        '/phpmyadmin', '/admin', '/cgi-bin'
+        '/phpmyadmin', '/admin', '/cgi-bin', '/wordpress/wp-admin/setup-config.php',
+        '/wordpress/wp-admin/setup-config.php',
     ];
     
     if (blockedPaths.some(path => request.nextUrl.pathname.includes(path))) {
