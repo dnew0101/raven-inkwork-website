@@ -8,7 +8,9 @@ const TIME_FRAME = 60 * 1000;
 
 export function middleware(request: NextRequest) {
     const userAgent = request.headers.get('user-agent') || '';
-    const ip = request.headers.get('x-forwarded-for') || 'unknown';
+    const ip = request.headers.get('x-forwarded-for') || 
+               request.headers.get('x-real-ip') || 
+               'unknown';
     
     if (userAgent.includes('Googlebot') || 
         userAgent.includes('Bingbot') || 
@@ -20,10 +22,10 @@ export function middleware(request: NextRequest) {
         '/wp-admin', '/wp-login.php', '/administrator', '/.git/', '/.env', 
         '/lander', '/setup-config.php', '/xmlrpc.php', '/wp-includes',
         '/phpmyadmin', '/admin', '/cgi-bin', '/wordpress/wp-admin/setup-config.php',
-        '/wordpress/wp-admin/setup-config.php',
+         '/favicon.ico',
     ];
     
-    if (blockedPaths.some(path => request.nextUrl.pathname.includes(path))) {
+    if (blockedPaths.some(path => request.nextUrl.pathname.startsWith(path))) {
         return new Response('Forbidden', { status: 403 });
     }
 
@@ -33,7 +35,7 @@ export function middleware(request: NextRequest) {
     if (entry) {
         if (now - entry.timestamp < TIME_FRAME) {
             if (entry.count >= RATE_LIMIT) {
-                return new Response('Too many requests, slow down there.', { status: 429 });
+                return new Response('Too many requests; slow down there, partner.', { status: 429 });
             }
             entry.count++;
         } else {
@@ -50,5 +52,8 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|Fallback-Assets|public).*)'],
+    matcher: [
+        '/((?!_next/static|_next/image|favicon\\.ico|.*\\.(?:jpg|jpeg|gif|png|svg|webp)).*)'
+    ],
 };
+
