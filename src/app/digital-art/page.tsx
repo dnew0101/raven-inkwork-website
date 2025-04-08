@@ -95,7 +95,11 @@ function DigitalArtPortfolio() {
         <Section
           title="Commissioned Work" 
           images={commissionedWork}
-          caption="These are pieces I have done as commissioned work, primarily for Reddit communities that I am a part of. This includes a crypto coin logo, story art, and more."
+          caption={
+            <>
+              <span>These are pieces I have done as commissioned work, primarily for Reddit communities that I am a part of; most notably, <a href="https://www.reddit.com/r/TheNaturallyUnknown/" className="text-blue-500 underline">r/TheNaturallyUnknown</a>."</span>
+            </>
+          }
           isFlexRowReverse={true}
           />
       </main>

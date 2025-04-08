@@ -34,6 +34,7 @@ export default function RootLayout({
     url: 'https://www.raveninkwork.com',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: '1703C Dock St',
       addressLocality: 'Tacoma',
       addressRegion: 'WA',
       addressCountry: 'US'
@@ -89,7 +90,7 @@ export default function RootLayout({
       {
         '@type': 'TattooParlor',
         name: 'Brass Monkey 2',
-        description: 'Popular Tacoma street shop. Raye still guest spots here occassionally.',
+        description: 'Popular Tacoma street shop.',
         url: 'https://www.yelp.com/biz/brass-monkey-2-tattoo-tacoma',
         address: {
           '@type': 'PostalAddress',

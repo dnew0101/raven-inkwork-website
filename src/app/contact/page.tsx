@@ -8,7 +8,7 @@ function ContactPage() {
       </header>
       <Webform />
       <p className='text-white text-center mt-6 w-[80%]'>
-        <strong><em>*Pssst!*</em></strong> If your looking to book a <strong className="text-indigo-400">tattoo appointment</strong>, please visit the booking form by visiting <a href="https://form.jotform.com/240391381273050" className="underline text-indigo-400" aria-label="Link to Tattoo Booking Form; external link to JotForm">Tattoo Booking Form</a> instead.
+        <strong><em>*Pssst!*</em></strong> If your looking to book a <strong className="text-indigo-400">tattoo appointment</strong>, please visit the <a href="https://form.jotform.com/240391381273050" className="underline text-indigo-400" aria-label="Link to Tattoo Booking Form; external link to JotForm">tattoo booking form</a> instead.
       </p>
     </div>
   )
