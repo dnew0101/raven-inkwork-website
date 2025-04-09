@@ -15,8 +15,29 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Raven Inkwork",
-  description: "Multimedia artist, specializing in tattoo, digital art, and photography. Located in Tacoma, Washington.",
+  title: "Raven Inkwork | Tattoo Artist | Tacoma, WA",
+  description: "Tattoo artist working out of Ethereal Tattoo in Tacoma, Washington. Specializing in fine line, illustrative, and neo-traditional tattoo styles.",
+  icons: {
+    icon: {url: "/favicon.ico", sizes: "any"},
+    shortcut: "/favicon.ico",
+    apple: { url: "/Global-Assets/RavenInkworkLogo.webp", sizes: "180x180" }, 
+  },
+  openGraph: {
+    title: "Raven Inkwork | Tattoo Artist | Tacoma, WA",
+    description: "Tattoo artist working out of Ethereal Tattoo in Tacoma, Washington. Specializing in fine line, illustrative, and neo-traditional tattoo styles.",
+    url: "https://www.raveninkwork.com",
+    siteName: "Raven Inkwork | Tattoo Artist | Tacoma, WA",
+    images: [
+      {
+        url: "https://www.raveninkwork.com/Global-Assets/RavenInkworkLogo.webp",
+        width: 600,
+        height: 600,
+        alt: "Raven Inkwork Logo",
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +50,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': ['Person', 'Artist'],
     name: 'Raven Inkwork',
-    image: 'https://www.raveninkwork.com/public/Global-Assets/RavenInkworkLogo.webp',
+    image: 'https://www.raveninkwork.com/Global-Assets/RavenInkworkLogo.webp',
     description: 'Multimedia artist, specializing in tattoo, digital art, and photography. Located in Tacoma, Washington.',
     url: 'https://www.raveninkwork.com',
     address: {
