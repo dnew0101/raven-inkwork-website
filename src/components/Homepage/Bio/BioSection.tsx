@@ -57,7 +57,7 @@ const BioSection = () => {
                 p-4 border-2 border-white lg:w-[50%]'>
                     <p className='flex flex-col text-xs sm:text-sm text-center justify-center'>
                     I prioritize a comfortable, collaborative experience, from consultation to final result. I offer a judgment-free space with amenities like fidget toys and design check-ins. I schedule ample time for breaks and adjustments, ensuring you never feel rushed. <br/><br/>
-                    My style leans towards illustrative fine line and stipple, particularly flora and fauna, and dark/horror. While I&#39;m proficient in traditional and blackwork, I&#39;m eager to explore neotraditional and color projects. I tend to focus quietly during sessions, but I&#39;m always open to conversation.
+                    My style leans towards illustrative, fine-line, and stipple, particularly flora/fauna and dark/horror. While I&#39;m proficient in traditional and blackwork, I&#39;m eager to explore neotraditional and color projects. I tend to focus quietly during sessions, but I&#39;m always open to conversation.
                     </p>
                 </div>
               </div>

@@ -52,7 +52,10 @@ function HeroServer() {
         <motion.p 
         className="flex text-white text-lg mt-2 justify-center flex-wrap"
         style={{ y: y2 }}>
-          Custom art, from <span className='mx-1.5'>tattoos</span> to <span className='mx-1.5'>game sprites!</span>
+          Artist at 
+            <span className='mx-1.5 bg-gradient-to-r from-purple-500 to-pink-400 bg-clip-text text-transparent font-semibold'>
+              Ethereal Tattoo
+            </span> • <span className='mx-1.5'>Tacoma, WA</span>
         </motion.p>
       </div>
         <motion.div 

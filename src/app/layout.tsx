@@ -17,6 +17,44 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Raven Inkwork | Tattoo Artist | Tacoma, WA",
   description: "Tattoo artist working out of Ethereal Tattoo in Tacoma, Washington. Specializing in fine line, illustrative, and neo-traditional tattoo styles.",
+  keywords: [
+    "Tacoma tattoo artist",
+    "Tacoma tattoos",
+    "fine line tattoos",
+    "illustrative tattoos",
+    "neo-traditional tattoos",
+    "Raven Inkwork",
+    "Ethereal Tattoo Tacoma",
+    "Ethereal Tattoo",
+    "Raye Tattoos",
+    "Pacific Ave Tattoo",
+    "Brass Monkey 2",
+    "Rare Breed Ink",
+    "Cicada Tattoo",
+    "Ravens Claw Tattoo",
+    "Ravens Claw",
+    "Flaming Dragon Tattoo",
+    "Ruston Way tattoo artist",
+    "downtown tacoma tattoo artist",
+    "Pierce County tattoo artist",
+    "Washington tattoo artist",
+    "Washington tattoos",
+    "Seattle tattoo artist",
+    "Seattle tattoos",
+    "Seattle fine line tattoos",
+    "lgbtq+ tattoo artist",
+    "lgbtq+ tattoos",
+    "LGBT-friendly tattoo artist",
+    "inclusive tattoo artist",
+    "female tattoo artist",
+    "women tattoo artist",
+    "woman tattoo artist",
+    "cover up tattoos",
+    "cover up tattoo artist",
+    "custom tattoos",
+    "appointment only tattoo shop",
+    "tattoo consultation Tacoma",
+  ],
   icons: {
     icon: {url: "/favicon.ico", sizes: "any"},
     shortcut: "/favicon.ico",
@@ -51,7 +89,7 @@ export default function RootLayout({
     '@type': ['Person', 'Artist'],
     name: 'Raven Inkwork',
     image: 'https://www.raveninkwork.com/Global-Assets/RavenInkworkLogo.webp',
-    description: 'Multimedia artist, specializing in tattoo, digital art, and photography. Located in Tacoma, Washington.',
+    description: 'Tattoo artist working out of Ethereal Tattoo in Tacoma, Washington. Specializing in fine line, illustrative, and neo-traditional tattoo styles.',
     url: 'https://www.raveninkwork.com',
     address: {
       '@type': 'PostalAddress',
@@ -171,7 +209,7 @@ export default function RootLayout({
         itemOffered: {
           '@type': 'Service',
           name: 'Tattoo Services',
-          description: 'Custom tattoo design and application'
+          description: 'Custom tattoo design and booking application'
         }
       },
       {
