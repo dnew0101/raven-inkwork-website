@@ -22,12 +22,12 @@ export function middleware(request: NextRequest) {
         '/wp-admin', '/wp-login.php', '/administrator', '/.git/', '/.env', 
         '/lander', '/setup-config.php', '/xmlrpc.php', '/wp-includes',
         '/phpmyadmin', '/admin', '/cgi-bin', '/wordpress/wp-admin/setup-config.php',
-         '/favicon.ico', '/wordpress'
+        '/wordpress'
     ];
     
     if (blockedPaths.some(path => request.nextUrl.pathname.startsWith(path))) {
         return new Response('Not Found: endpoint does not exist', { 
-            status: 410,
+            status: 410, //Best practice to dissuade repeated bots from querying paths.
             headers: { 
                 'X-Robots-Tag': 'noindex, nofollow', //Bots wont give up... I'm trying to tell them to get lost.
                 'X-Frame-Options': 'DENY',
