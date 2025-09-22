@@ -81,7 +81,7 @@ function HeroServer() {
                 </p>
                 <Button 
                   innerText='Booking Form' 
-                  route={'https://form.jotform.com/240391381273050'}
+                  route={'https://tally.so/r/mRA2LK'}
                   />
               </div>
 

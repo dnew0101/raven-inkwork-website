@@ -14,7 +14,7 @@ function ContactPage() {
         </strong> 
         
         <br />
-        If your looking to book a <span className="text-purple-400">tattoo appointment</span>, please visit the <a href="https://form.jotform.com/240391381273050" className="underline text-purple-400 font-medium hover:text-purple-200 hover:tracking-wide transition-all ease-in-out duration-300" aria-label="Link to Tattoo Booking Form; external link to JotForm">tattoo booking form</a> instead.
+        If your looking to book a <span className="text-purple-400">tattoo appointment</span>, please visit the <a href="https://tally.so/r/mRA2LK" className="underline text-purple-400 font-medium hover:text-purple-200 hover:tracking-wide transition-all ease-in-out duration-300" aria-label="Link to Tattoo Booking Form; external link to JotForm">tattoo booking form</a> instead.
       </p>
     </div>
   )

@@ -12,7 +12,7 @@ type NavLinksProps = {
  */
 const links = [
     { href: "/", label: "Home" },
-    { href: "https://form.jotform.com/240391381273050", label: "Booking" },
+    { href: "https://tally.so/r/mRA2LK", label: "Booking" },
     { href: "/tattoos", label: "Tattoos" },
     { href: "/digital-art", label: "Digital Art" },
     { href: "/photography", label: "Photography" },
